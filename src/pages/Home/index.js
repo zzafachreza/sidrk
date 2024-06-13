@@ -36,19 +36,19 @@ export default function Home({ navigation, route }) {
     },
     {
       image: require('../../assets/a2.png'),
-      judul: 'Peta Rute Penanganan Kecelakaan',
+      judul: 'Peta Sebaran Kejadian Kecelakaan',
       menu: 'Formulir',
-      keterangan: 'Rute Penanganan Kecelakaan Lalu Lintas Di Kota Yogyakarta',
+      keterangan: 'Peta Sebaran Kejadian Kecelakaan Lalu Lintas di Kota Yogyakarta Tahun 2019-2023',
     },
     {
       image: require('../../assets/a3.png'),
       judul: 'Peta Lokasi Fasilitas Kesehatan & Ambulan',
       menu: 'Formulir',
-      keterangan: 'Peta Lokasi Fasilitas Kesehatan & Ambulance di Kota Yogyakarta',
+      keterangan: 'Peta Lokasi Fasilitas Kesehatan & Ambulan di Kota Yogyakarta',
     },
     {
       image: require('../../assets/a4.png'),
-      judul: 'Daftar Ambulan & Fasilitas Kesehatan',
+      judul: 'Daftar Fasilitas Kesehatan & Ambulan',
       menu: 'Faskes',
       keterangan: 'Daftar Lokasi Ambulan & Fasilitas Kesehatan Terdekat'
     },
@@ -169,9 +169,9 @@ export default function Home({ navigation, route }) {
           return (
             <TouchableWithoutFeedback onPress={() => navigation.navigate(item.menu, item)}>
               <View style={{
-                marginVertical: 10,
+                marginVertical: 5,
                 width: windowWidth / 2,
-                height: windowWidth / 2,
+                height: windowWidth / 2.2,
                 justifyContent: 'center',
                 alignItems: 'center',
                 padding: 10,
@@ -179,15 +179,15 @@ export default function Home({ navigation, route }) {
                 <View style={{
                   padding: 10,
                   backgroundColor: colors.secondary,
-                  width: windowWidth / 2.5,
-                  height: windowWidth / 2.5,
+                  width: windowWidth / 3.5,
+                  height: windowWidth / 3.5,
                   justifyContent: 'center',
                   alignItems: 'center',
-                  borderRadius: 10,
+                  borderRadius: 25,
                 }}>
                   <Image source={item.image} style={{
-                    width: windowWidth / 4,
-                    height: windowWidth / 4
+                    width: windowWidth / 6,
+                    height: windowWidth / 6
                   }} />
                 </View>
                 <Text style={{

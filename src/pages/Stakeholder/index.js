@@ -71,7 +71,10 @@ export default function Stakeholder({ navigation, route }) {
                         flexDirection: 'row',
                         justifyContent: 'flex-end',
                     }}>
-                        <TouchableOpacity onPress={() => navigation.navigate('Maps', { ...item, judul: item.nama_stakeholder })} style={{
+                        <TouchableOpacity onPress={() => {
+                            console.log(item.maps);
+                            Linking.openURL(item.maps);
+                        }} style={{
                             width: 40,
 
                             height: 40,

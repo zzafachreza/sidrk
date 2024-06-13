@@ -73,7 +73,10 @@ export default function FaskesDetail({ navigation, route }) {
                         flexDirection: 'row',
                         justifyContent: 'flex-end',
                     }}>
-                        <TouchableOpacity onPress={() => navigation.navigate('Maps', { ...item, judul: item.nama_faskes })} style={{
+                        <TouchableOpacity onPress={() => {
+                            console.log(item.maps);
+                            Linking.openURL(item.maps);
+                        }} style={{
                             width: 40,
 
                             height: 40,

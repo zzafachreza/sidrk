@@ -34,7 +34,7 @@ export default function Faskes({ navigation, route }) {
                 <View style={{
                     flex: 1,
                     padding: 10,
-                    backgroundColor: colors.secondary,
+                    backgroundColor: colors.white,
                     marginVertical: 10,
                     borderRadius: 10,
                     borderWidth: 1,
@@ -49,12 +49,12 @@ export default function Faskes({ navigation, route }) {
                     }}>
                         <Text style={{
                             fontFamily: fonts.primary[400],
-                            color: colors.white,
+                            color: colors.primary,
                             fontSize: 14
                         }}>Kecamatan</Text>
                         <Text style={{
                             fontFamily: fonts.primary[600],
-                            color: colors.white,
+                            color: colors.primary,
                             fontSize: 18
                         }}>{item.kecamatan}</Text>
 
@@ -63,7 +63,7 @@ export default function Faskes({ navigation, route }) {
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
-                        <Icon size={30} color={colors.white} type='ionicon' name='arrow-forward-circle-outline' />
+                        <Icon size={30} color={colors.primary} type='ionicon' name='arrow-forward-circle-outline' />
                     </View>
 
                 </View>
